@@ -21,8 +21,10 @@
       box-sizing: border-box;
     }
     .apple-logo {
-      width: 40px;
+      width: 50px;
+      height: auto;
       margin-bottom: 20px;
+      display: block;
     }
     h2 {
       text-align: right;
@@ -35,7 +37,7 @@
       flex-direction: column;
       margin-bottom: 8px;
     }
-    @media(min-width: 4px) {
+    @media(min-width: 480px) {
       .row {
         flex-direction: row;
         justify-content: space-between;
@@ -97,13 +99,10 @@
 </head>
 <body>
   <div class="receipt-container">
-    <img src="apleimage/logo11.png">
+    <img src="apleimage/logo11.png" class="apple-logo" alt="Apple Logo">
     <h2>Receipt</h2>
 
     <div class="row">
-      <div>
-      
-      </div>
       <div>
         <strong>BILLED TO</strong><br>
         Store Credit<br>
@@ -126,7 +125,7 @@
     <div class="section-title">App Store</div>
 
     <div class="app-info">
-      <img src="apleimage/macbook-47635.png" alt="Lineage 2 Icon">
+      <img src="apleimage/macbook-47635.png" alt="MacBook Product Image">
       <div>
         <strong>Apple MacBook Air (16GB/1TB/13-inch)</strong><br>
         In-App Purchase — iPhone<br>

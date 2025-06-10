@@ -2,55 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invoice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Receipt</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
+      background: #f9f9f9;
       margin: 0;
-      background-color: #f9f9f9;
-    }
-
-    h1 {
-      font-size: 1.5rem;
+      padding: 20px;
       color: #333;
+    }
+    .receipt-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border: 1px solid #ddd;
+      position: relative;
+    }
+    .apple-logo {
+      width: 40px;
       margin-bottom: 20px;
     }
-
-    img {
-      width: 102%;
-      max-width: 600px;
-      height: auto;
-      border: 1px solid #ccc;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    h2 {
+      text-align: right;
+      color: #888;
+      font-weight: normal;
     }
-
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      margin-top: 20px;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .app-info {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+    }
+    .app-info img {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+    .footer a {
+      color: #06c;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
     .call-button {
-      margin-top: 25px;
-      padding: 14px 28px;
+      display: inline-block;
+      margin: 30px auto 0;
+      padding: 10px 20px;
       background-color: #007aff;
       color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
+      text-align: center;
       text-decoration: none;
-      display: inline-block;
-      width: 80%;
-      max-width: 300px;
-    }
-
-    .call-button:hover {
-      background-color: #005bb5;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>Here is your Purchase</h1>
-  <img src="apleimage/apleinvoice.jpg" alt="Invoice">
+  <div class="receipt-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="apple-logo" alt="Apple Logo">
+    <h2>Receipt</h2>
 
-  <br>
-  <a href="tel:+18332249254" class="call-button">Call Apple Now</a>
+    <div class="row">
+      <div>
+        <strong>APPLE ID</strong><br>
+        MMYX0D9MT8
+      </div>
+      <div>
+        <strong>BILLED TO</strong><br>
+        Store Credit<br>
+        Rhonda Lanyon<br>
+        210 Smith St Apt 11<br>
+        Lowell, MA 01851-3829<br>
+        USA
+      </div>
+      <div style="text-align: right;">
+        <strong>TOTAL</strong><br>
+        $745.99
+      </div>
+    </div>
+
+    <div class="row">
+      <div><strong>DATE</strong><br>June 10, 2025</div>
+      <div><strong>DOCUMENT NO.</strong><br>119204351845</div>
+    </div>
+
+    <div class="section-title">App Store</div>
+
+    <div class="app-info">
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/28/0f/56/280f5609-5c83-4ea4-900a-71d7711b0c98/AppIcon-1x_U007emarketing-85-220-9.png/246x0w.png" alt="Lineage 2 Icon">
+      <div>
+        <strong>Apple MacBook Air (16GB/1TB/13-inch)</strong><br>
+        In-App Purchase — iPhone<br>
+        <a href="tel:+1234567890" class="call-button" style="margin-top: 10px; font-size: 12px; padding: 6px 12px;">Call Support</a>
+      </div>
+      <div style="margin-left:auto;"><strong>$745.99</strong></div>
+    </div>
+
+    <div class="row">
+      <div>Subtotal</div>
+      <div>$745.99</div>
+    </div>
+    <div class="row">
+      <div>Tax</div>
+      <div>$0.00</div>
+    </div>
+
+    <div class="row" style="font-weight: bold; margin-top: 10px;">
+      <div>TOTAL</div>
+      <div>$745.99</div>
+    </div>
+
+    <div style="margin-top: 50px;">
+  <strong style="font-size: 14px; display: block; text-align: center;">If you didn't make this purchase or believe an unauthorized person is attempting to access your account, feel free to contact us anytime — we are available 24/7. Click on 'Call Us' to connect with a representative now.</strong>
+</div>
+      <br><br>
+      <div style="text-align: center;">
+  <a href="#">Apple ID Summary</a> • 
+      <a href="#">Terms of Sale</a> • 
+      <a href="#">Privacy Policy</a><br><br>
+      Copyright © 2018 Apple Inc. All rights reserved.
+    
+</div>
+
+    <div style="text-align: center;">
+      <a href="tel:+1234567890" class="call-button">Call Us</a>
+    </div>
+  </div>
 </body>
 </html>
+
